@@ -1494,9 +1494,8 @@ span {
     }
     .home{
         margin: 0 0 0 1rem;
-    .col {
-
-    justify-content: flex-end;
+  .row {
+    margin-left: 10px !important;
 }
 }
 }
