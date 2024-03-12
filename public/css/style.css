@@ -1488,6 +1488,11 @@ span {
             padding: 0.2rem;
         }
 }
+@media (max-width: 360px){
+    .col {
+        justify-content: flex-start;
+    }
+}
 @media (max-width: 365px) {
     .about-img img {
         width: 90vw;
