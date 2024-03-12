@@ -1,0 +1,55 @@
+<% layout("/layouts/boilerplate") %>
+<div class="wrapper">
+<section id="contact">
+    <div class="contactus-section-container">
+            <h1 class="contactus-heading">Contact Me</h1>
+            <h3 class="contactus-sub-heading">Questions, Thoughts, or Just Want to Say Hello?</h3>
+            <div class="contactus-form-container">
+                <form method="POST" action="/home" novalidate class="needs-validation mb-5">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="name" class="form-control" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email" class="form-control" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phoneNr" class="form-label">Contact Number</label>
+                        <input type="tel" name="phoneNr" id="phone Number" placeholder="phoneNr" class="form-control" pattern="[7-9]{1}[0-9]{9}" 
+                        title="Phone number with 7-9 and remaing 9 digit with 0-9" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="subject" class="form-control" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Drscription</label>
+                        <textarea name="description" id="description" class="form-control" required>add your description</textarea>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                    </div>
+                   
+                    <button class="glow-on-hover hero-section-btn" type="submit" >Submit</button>
+                </form>   
+            </div>
+    </div>   
+    </section>
+</div>

@@ -1,0 +1,39 @@
+<nav style="border: none !important; outline: none !important;" id="custnavbar" class="custnavbar navbar navbar-expand-md  border-bottom sticky-top " >
+   <div class="container-fluid">
+     <a class="navbar-brand" href="/home">
+      <div class="logo-container">
+         <img src="images\slogo.png" class="logo">
+         <div class="logo-text">iddharth kumar rai</div>
+      </div>
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav">
+         <a class="nav-link" href="/home">Explore</a>
+       </div>
+
+       <div class="navbar-nav ms-auto">
+         <a class="nav-link" href="/home">Home</a>
+         <a class="nav-link" href="/home#about">About</a>
+         <a id="navproject" class="nav-link" href="/home#project">Project</a>
+         <a id="navportfolio" class="nav-link" href="/home#portfolio">Project</a>
+         <a class="nav-link" href="/home#skils">Skills</a>
+         <a class="nav-link" href="/home#contact">Contact</a>
+
+      </ul>
+          <% if (!currentUser) { %>
+           <a class="nav-link " aria-current="page" href="/signup"><b>Sign up</b></a>
+           <a class="nav-link" href="/login"><b>Log in</b></a>
+          <% } %> 
+
+          <% if (currentUser) { %>
+           <a class="nav-link" href="/logout"><b>logout</b></a>
+          <% } %>
+         
+       </div>
+
+     </div>
+   </div>
+ </nav>
